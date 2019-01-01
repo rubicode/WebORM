@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "rubi",
+    "password": "1234",
+    "database": "ormdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "rubi",
+    "password": "1234",
+    "database": "ormdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "rubi",
+    "password": "1234",
+    "database": "ormdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
