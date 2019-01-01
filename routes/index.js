@@ -24,7 +24,7 @@ router.post('/add', helpers.loggedIn ,function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login');
+  res.render('login', {loginMessage: req.flash('loginMessage')});
 });
 
 router.post('/login', function(req, res, next) {
@@ -33,6 +33,7 @@ router.post('/login', function(req, res, next) {
     req.session.user = req.body.email;
     res.redirect("/");
   }else{
+    req.flash('loginMessage', 'Email atau Password Salah');
     res.redirect("login");
   }
 });
