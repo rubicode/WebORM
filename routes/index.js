@@ -44,4 +44,8 @@ router.get('/logout', function(req, res, next) {
   })
 });
 
+router.get('/jquery', (req, res)=>{
+  res.render('jquery');
+})
+
 module.exports = router;
